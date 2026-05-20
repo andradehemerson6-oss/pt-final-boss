@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>pag.login</title>
+
+</head>
+
+<body>
+<div class="suda">
+    <h2>Login pag</h2>
+    <input type="text" id="user" placeholder="user name"><br>
+    <input type="text" id="password" placeholder="user password">
+    <br>
+    <button onclick="suda()">acesse o login</button>
+</div>
+<script>     
+    function suda(){
+        const user = document.getElementById("user").value
+        const passoword = document.getElementById("password").value
+
+        const user = "admin"
+          const password = "1234"
+
+          if(user === user && passoword === passoword){
+            alert("pode acessar");
+            window.location.href="site-oficial.html"
+          }else{
+            alert(" nao pode acessar")
+                    }
+    }
+    
+
+</script>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,551 @@
+/* ════════════════════════════════════════
+   Escola Pitágoras de Samos — Estilos
+   ════════════════════════════════════════ */
+
+/* ── VARIÁVEIS GLOBAIS ── */
+:root {
+  --purple-dark: #1e0a3c;
+  --purple-mid:  #2d1260;
+  --purple-nav:  #251050;
+  --gold:        #f5c842;
+  --gold-light:  #ffe07a;
+  --cream:       #f5f3ff;
+  --white:       #ffffff;
+  --gray:        #6b7280;
+  --light-gray:  #f3f4f6;
+  --navy:        #1e0a3c;
+}
+
+/* ── RESET ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── BASE ── */
+body {
+  font-family: 'Lato', sans-serif;
+  background: var(--cream);
+  color: var(--navy);
+  min-height: 100vh;
+}
+
+/* ════════════════════════════════════════
+   NAVEGAÇÃO SUPERIOR
+   ════════════════════════════════════════ */
+.top-nav {
+  background: var(--purple-nav);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  height: 72px;
+  position: relative;
+  z-index: 10;
+}
+
+.top-nav .school-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 1.3;
+  max-width: 120px;
+}
+
+.top-nav .nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.top-nav .nav-links a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+
+.top-nav .nav-links a:hover {
+  color: var(--gold);
+}
+
+/* ── LOGO BADGE (centro do nav) ── */
+.logo-badge {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: var(--white);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+  z-index: 20;
+}
+
+.logo-badge svg {
+  width: 52px;
+  height: 52px;
+}
+
+/* ════════════════════════════════════════
+   HERO BANNER
+   ════════════════════════════════════════ */
+.hero {
+  background: var(--purple-dark);
+  position: relative;
+  overflow: hidden;
+  padding: 56px 32px 48px;
+  min-height: 200px;
+}
+
+/* Padrão de pontos decorativos */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Brilho roxo suave */
+.hero::after {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(120, 60, 220, 0.25), transparent 70%);
+  pointer-events: none;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.hero-inner h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  font-weight: 900;
+  color: var(--white);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-inner h1 span {
+  color: var(--gold);
+}
+
+.hero-btns {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  color: var(--white);
+  background: transparent;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  letter-spacing: 0.5px;
+}
+
+.hero-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.hero-btn.primary {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--purple-dark);
+}
+
+.hero-btn.primary:hover {
+  background: var(--gold-light);
+  border-color: var(--gold-light);
+}
+
+/* Ícones decorativos flutuantes */
+.hero-deco {
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+  display: flex;
+  gap: 16px;
+  opacity: 0.12;
+  font-size: 2.5rem;
+  pointer-events: none;
+}
+
+/* ════════════════════════════════════════
+   ABAS (TABS)
+   ════════════════════════════════════════ */
+.tabs-wrapper {
+  background: var(--purple-nav);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tabs {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 24px;
+  gap: 2px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 14px 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.45);
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  border-bottom: 3px solid transparent;
+  white-space: nowrap;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.tab-btn:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.tab-btn.active {
+  color: var(--gold-light);
+  border-bottom-color: var(--gold);
+}
+
+/* ════════════════════════════════════════
+   ÁREA DE CONTEÚDO
+   ════════════════════════════════════════ */
+.content-area {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+.tab-panel {
+  display: none;
+  animation: fadeUp 0.35s ease both;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── TÍTULO DE SECÇÃO ── */
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+
+.section-title span {
+  color: var(--gold);
+}
+
+.divider {
+  width: 48px;
+  height: 3px;
+  background: var(--gold);
+  margin-bottom: 28px;
+  border-radius: 2px;
+}
+
+/* ── CAIXA DE AVISO ── */
+.alert {
+  background: #fff8ec;
+  border-left: 5px solid var(--gold);
+  border-radius: 4px;
+  padding: 16px 20px;
+  margin-bottom: 32px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.alert-icon {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.alert p {
+  font-size: 0.9rem;
+  color: #7a5b10;
+  font-weight: 700;
+  margin: 0;
+}
+
+.alert small {
+  font-size: 0.8rem;
+  color: #9a7a30;
+  font-weight: 400;
+  display: block;
+  margin-top: 3px;
+}
+
+/* ── GRELHA DE DOCUMENTOS ── */
+.docs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.doc-card {
+  background: var(--white);
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.doc-card:hover {
+  box-shadow: 0 6px 24px rgba(13, 27, 62, 0.1);
+  transform: translateY(-2px);
+}
+
+.doc-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.1rem;
+}
+
+.doc-card h3 {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 3px;
+}
+
+.doc-card p {
+  font-size: 0.78rem;
+  color: var(--gray);
+  line-height: 1.4;
+}
+
+/* ── VISÃO & MISSÃO ── */
+.vm-grid {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 600px) {
+  .vm-grid { grid-template-columns: 1fr 1fr; }
+}
+
+.vm-card {
+  background: var(--white);
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  padding: 28px;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.vm-card:hover {
+  box-shadow: 0 8px 28px rgba(13, 27, 62, 0.1);
+}
+
+.vm-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--navy), var(--gold));
+}
+
+.vm-card .vm-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.vm-card h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 14px;
+}
+
+.vm-card p {
+  font-size: 0.88rem;
+  color: #374151;
+  line-height: 1.75;
+}
+
+/* ── VALORES ── */
+.values-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.value-tag {
+  background: var(--navy);
+  color: var(--cream);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 999px;
+  letter-spacing: 0.5px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.value-tag:hover {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+.value-statement {
+  background: linear-gradient(135deg, var(--navy) 0%, #1a3060 100%);
+  border-radius: 10px;
+  padding: 28px;
+  color: var(--white);
+}
+
+.value-statement p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ── CITAÇÕES ── */
+.quotes-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.quote-card {
+  background: var(--white);
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  padding: 24px 28px;
+  position: relative;
+  transition: box-shadow 0.2s;
+}
+
+.quote-card:hover {
+  box-shadow: 0 6px 20px rgba(13, 27, 62, 0.09);
+}
+
+.quote-card::before {
+  content: '"';
+  position: absolute;
+  top: 10px; left: 16px;
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  color: var(--gold);
+  opacity: 0.35;
+  line-height: 1;
+}
+
+.quote-card p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--navy);
+  line-height: 1.65;
+  padding-left: 20px;
+}
+
+.quote-attr {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding-left: 20px;
+  display: block;
+}
+
+/* ── SOBRE PITÁGORAS ── */
+.about-box {
+  background: var(--white);
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  padding: 32px;
+  margin-bottom: 24px;
+}
+
+.about-box p {
+  font-size: 0.92rem;
+  color: #374151;
+  line-height: 1.8;
+}
+
+.about-box strong {
+  color: var(--navy);
+}
+
+.quotes-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: var(--navy);
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+/* ════════════════════════════════════════
+   RESPONSIVO
+   ════════════════════════════════════════ */
+@media (max-width: 600px) {
+  .top-nav .nav-links { display: none; }
+  .hero-deco          { display: none; }
+  .tab-btn            { padding: 12px 14px; font-size: 0.72rem; }
+}

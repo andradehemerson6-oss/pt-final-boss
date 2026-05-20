@@ -1,0 +1,122 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    background-image: url('Gemini_Generated_Image_n9shf5n9shf5n9sh.png');
+}
+.titulo-principal {
+    text-align: center;
+    color: #e0dcdc;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #c0bdbd;
+    margin-bottom: 40px;
+}
+
+.polos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.polo-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 400px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.polo-card:hover {
+    transform: translateY(-5px);
+}
+
+.polo-header {
+    background-color: #0a062b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.lista-cursos {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.lista-cursos li {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    color: #444;
+    display: flex;
+    align-items: center;
+}
+
+.lista-cursos li:last-child {
+    border-bottom: none;
+}
+
+
+.lista-cursos li i {
+    margin-right: 15px;
+    color: #1a3a5a;
+    width: 20px;
+}
+
+
+.footer-section {
+  margin-bottom: 20px;
+  background-color: rgb(12, 12, 12);
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 100px;
+ text-align: center;
+
+}
+.footer {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 10px;
+  width: 90%;
+}
+.footer-section {
+  margin-bottom: 20px;
+}
+.footer-section h4 {
+  margin-bottom: 10px;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-section ul li { 
+  margin-bottom: 5px;
+}
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+} 
+#footer2 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+#footer3 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+#footer2 li, #footer3 li {
+  margin-bottom: 0;
+}
+

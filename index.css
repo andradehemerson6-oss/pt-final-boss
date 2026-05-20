@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(Gemini_Generated_Image_n9shf5n9shf5n9sh.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-color: rgb(2, 50, 95);
+
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+#t1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+
+
+
+.container {
+    width: 420px;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    border-color: rgb(44, 1, 1);
+    color: rgb(125, 202, 253);
+    padding: 30px 40px;
+    box-shadow: rgb(0, 38, 163) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.container h1 {
+    font-size: 36px;
+    text-align: center;
+
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 70%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 110px;
+    outline: none;
+    font-size: 16px;
+    color: #002781;
+    padding: 20px 45px 20px 20px;
+
+
+}
+
+#cnhl {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -15px;
+}
+
+image {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.input-box input::placeholder {
+    color: rgb(48, 46, 46)
+}
+
+
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    color: rgb(65, 63, 63);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#sdf button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: rgb(1, 40, 99);
+    border-radius: 40px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: rgb(133, 133, 133);
+    accent-color: white;
+    margin-bottom: 20px;
+
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    color: rgb(126, 123, 123);
+}
+
+remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.login {
+
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: rgb(29, 100, 255);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.9s ease;
+
+}
+
+.login:hover {
+    background-color: rgb(5, 0, 49);
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgb(133, 133, 133);
+}
+
+.register-link a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+ 

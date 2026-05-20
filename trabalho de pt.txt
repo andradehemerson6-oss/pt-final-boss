@@ -1,0 +1,250 @@
+<form class="card">
+    <div class="cursos-container">
+        <div class="curso">
+            <h2 class="titulo">CURSOS</h2>
+            
+      <ul class="cursos-list">
+
+  <li >Contabilidade e Gestão</li>
+  <br>  
+  <li>Gestão Empresarial</li>
+    <br>
+  <li>Finanças</li>
+    <br>
+  <li>Informática de Gestão</li>
+    <br>
+  <li>Técnico de Informática</li>
+    <br>
+  <li>Mecânica (Máquinas e Motores)</li>
+    <br>
+  <li>Construção Civil (Desenhador Projectista)</li>
+    <br>
+  <li>Electrónica e Telecomunicações</li>
+</ul>
+        </div>
+    </div>
+    </form>
+    
+    
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.card {
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.card {
+  background-color: rgb(7, 7, 49);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(7, 7, 7, 0.603);
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+  transition: transform 0.2s;
+
+}
+.lista-de-cursos {
+list-style: none;
+padding: 0;
+margin: 0;
+
+
+}
+.lista-de-cursos {
+list-style: none;
+padding: 0;
+margin: 0;
+
+
+ <main class="container2">
+      <div class="principal2">
+     
+        <div class="lista2">
+          <h2>PAGAMENTOS</h2>
+    <h3> Sistema de Pagamentos</h3>
+       
+<ul>
+<li>BANCO BAI Nº <strong>7331884710001</strong></li>
+<br>
+<li>BANCO ECONÓMICO Nº <strong>00021831403</strong></li>
+
+<br>
+<li>BANCO BIC Nº <strong>10503251310001</strong></li>
+
+<br>
+<li>BANCO SOL Nº <strong>8257.6869.1000.1</strong></li>
+
+
+</ul>
+        </div>
+    
+  </div>
+  </main>   
+  
+  .lista2{
+background-color: rgb(7, 7, 49);
+color: white;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(7, 7, 7, 0.10);
+padding: 20px;
+text-align: center;
+width: 200px;
+height: 420px;
+transition: transform 0.2s;
+margin-top: -460px;
+align-items: center;
+justify-self: left;
+
+}
+
+  <main class="container">
+
+      <div class="principal">
+  <div class="lista">
+ <h1 class="titulo1">Cursos</h1>
+   <ul>
+
+  <li >Contabilidade e Gestão</li>
+  <br>  
+  <li>Gestão Empresarial</li>
+    <br>
+  <li>Finanças</li>
+    <br>
+  <li>Informática de Gestão</li>
+    <br>
+  <li>Técnico de Informática</li>
+    <br>
+  <li>Mecânica (Máquinas e Motores)</li>
+    <br>
+  <li>Construção Civil (Desenhador Projectista)</li>
+    <br>
+  <li>Electrónica e Telecomunicações</li>
+  </ul>
+  </div>    
+</div>
+  </main>
+
+
+<main class="cont2">
+   <div class="prin2">
+    <div class="lista2">
+          <h2>PAGAMENTOS</h2>
+    <h3> Sistema de Pagamentos</h3>
+       
+<ul>
+<li>BANCO BAI Nº <strong>7331884710001</strong></li>
+<br>
+<li>BANCO ECONÓMICO Nº <strong>00021831403</strong></li>
+
+<br>
+<li>BANCO BIC Nº <strong>10503251310001</strong></li>
+
+<br>
+<li>BANCO SOL Nº <strong>8257.6869.1000.1</strong></li>
+
+</ul>
+</div>
+</div>
+</main>
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.cont2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.principal{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.prin2{
+      display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+
+ /*.titulo1{
+    align-items: center;
+     justify-content: center;
+    align-items: center;
+ }*/
+
+
+ .lista{
+    padding: 20px;
+     background-color: rgb(7, 7, 49);
+ color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #0707079a;
+  width: 200px;
+  padding: 10px;
+  transition: transform 0.3s;
+  margin-top: 150px;
+  box-shadow: 0 4px 8px rgba(7, 7, 7, 0.90);
+
+ }
+
+ .lista2{
+        padding: 20px;
+     background-color: rgb(7, 7, 49);
+ color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #0707079a;
+  width: 200px;
+  padding: 10px;
+  transition: transform 0.3s;
+  margin-top: -450px;
+  box-shadow: 0 4px 8px rgba(7, 7, 7, 0.90);
+  left: 0px;
+ }
+
+ .lista:hover{
+    transform: scale(1.1);
+ }
+
+ h1{
+    text-align: center;
+    padding-top: 100px;
+}
+
+h3, h2{
+    text-align: center;
+    padding: 10px;
+}
+
+h4{
+    text-align: center;
+    opacity: 1.5;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+   
+}
+
+ul{
+    text-align: center;
+    list-style: none;/*tira a bolinha da lista*/
+   
+}
+

@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #4061f5, #001aff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login-container {
+    background: #003674;
+    padding: 30px;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(1, 77, 128, 0.904);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0045ad;
+}
+
+.login-container input {
+
+    background: #e2c9f6;
+
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+
+
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #88818d;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+
+
+
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.314);
+}
+
+
+
+
+
+button:hover {
+    background: #cf8b8b;
+    background: linear-gradient(135deg, #a14242, #000000);
+
+}
+
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.success-message {
+    color: green;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+label {
+    color: #d66f6f;
+}
+
+
+
+
+
+
+
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.success-message {
+    color: green;
+    text-align: center;
+    margin-bottom: 15px;
+}
+label {color: #d66f6f;}
+
+
+
+
+

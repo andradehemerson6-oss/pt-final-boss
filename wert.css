@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ‘Segoe UI’, Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(255, 255, 255);
+  background-image: url(Gemini_Generated_Image_ao81whao81whao81.jpg)
+}
+
+header {
+  display: flex;
+  background-color: #f1f1f1;
+  padding: 40px;
+  text-align: center;
+  align-items: center;
+  gap: 150px;
+  background-color: rgb(7, 7, 49);
+  position: fixed;
+  width: 90%;
+  margin-left: 25px;
+  border-radius: 50px;
+  height: 70px;
+  top: 0;
+  left: 0;
+}
+
+h1#lg2 {
+  padding: 90px;
+  color: rgb(255, 255, 255);
+  ;
+  margin-top: 100px;
+  margin-right: 250px;
+  right: 93px;
+}
+
+p#lg1 {
+
+  color: rgb(255, 255, 255);
+
+}
+
+p#lg3 {
+  color: rgb(255, 255, 255);
+  margin-top: -55px;
+  margin-left: 150px;
+  padding: 10px;
+  background-color: rgb(158, 158, 158);
+  width: 100px;
+  border-radius: 50px;
+
+}
+
+p#lg4 {
+  color: rgb(255, 255, 255);
+  margin-top: -90px;
+  margin-left: 370px;
+  padding: 10px;
+  background-color: rgb(158, 158, 158);
+  width: 100px;
+  border-radius: 50px;
+}
+
+
+
+.nav-link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.card {
+  list-style: none;
+  background-color: rgb(0, 0, 0);
+  color: rgb(182, 12, 12);
+  border-radius: 10px;
+  background-image: url(images.jpeg);
+  width: 290px;
+  padding: 10px;
+  margin-top: 110px;
+  margin-right: 900px;
+  text-decoration-color: aliceblue;
+}
+
+.card2 {
+  list-style: none;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  border-radius: 10px;
+  background-image: url(pagamentos.jpeg);
+  width: 290px;
+  padding: 15px;
+  margin-top: -110px;
+  margin-left: 500px;
+}
+
+.card3 {
+  list-style: none;
+  background-color: rgb(253, 253, 255);
+  color: white;
+  border-radius: 10px;
+  background-image: url(images\ \(4\).jpeg);
+  width: 250px;
+  padding: 18px;
+  margin-top: -115px;
+  margin-left: 1000px;
+
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  /*faz o espacamento entre eles pq justify:center e justify:space between
+   n se usam juntos*/
+}
+
+div {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+  background-color: rgb(12, 12, 12);
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 100px;
+  position: fixed;
+  justify-content: center;
+}
+
+.footer {
+  background-color: rgb(108, 17, 192);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 10px;
+  width: 90%;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#footer2 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+#footer3 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+#footer2 li,
+#footer3 li {
+  margin-bottom: 0;
+}
+
+.a {
+  color: black;
+}
